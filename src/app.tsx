@@ -1,8 +1,8 @@
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { ListPage } from "./views/list";
-import { DetailPage } from "./views/detail";
-import { CorporationProvider } from "./core/corporation-provider.component";
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { ListPage } from './views/list';
+import { DetailPage } from './views/detail';
+import { CorporationProvider } from './core/corporation-provider.component';
 
 export const App = () => {
   return (
@@ -10,10 +10,10 @@ export const App = () => {
       <Switch>
         <CorporationProvider>
           <Route exact path="/">
-              <ListPage />
+            <ListPage />
           </Route>
-          <Route path="/detail/:id">
-              <DetailPage />
+          <Route path="/detail/:login">
+            <DetailPage />
           </Route>
         </CorporationProvider>
       </Switch>

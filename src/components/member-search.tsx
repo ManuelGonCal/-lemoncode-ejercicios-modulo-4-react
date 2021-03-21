@@ -1,5 +1,5 @@
-import React from "react";
-import { CorporationContext } from "../core/corporation-provider.component";
+import React from 'react';
+import { CorporationContext } from '../core/corporation-provider.component';
 
 export const MemberSearch: React.FC = () => {
   const { setCorporation } = React.useContext(CorporationContext);
